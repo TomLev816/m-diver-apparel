@@ -1,31 +1,43 @@
-.App {
-  text-align: center;
-}
-
 .nav-container {
   display: flex;
   justify-content: space-between;
 }
 
-.home-container {
+.home-main-container {
   max-width: 100%;
-  min-height: 100vh;
-  display: flex;
 }
 
-.home-half-contianer {
-  min-width: 50%;
-  max-width: 50%;
+.home-half-container {
+  width: 100%;
 }
 
 .back-img{
   max-width: 100%;
 }
 
-.home-left-half {
-  align-content: center;
-  top: 50%;
+.home-info-wrapper {
+  text-align: center;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .home-main-container {
+    display: flex;
+  }
+
+  .home-half-container {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
 
 
 

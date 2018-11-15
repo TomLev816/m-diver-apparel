@@ -6,17 +6,16 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className='home-container'>
-        <div className='home-half-contianer'>
-          <div className="home-left-half">
-            <h1>Muff Diver Apperal</h1>
-            <br></br>
+      <div className='home-main-container'>
+        <div className='home-info home-half-container'>
+          <div className="home-info-wrapper">
+            <h1>Muff Diver Apparel</h1>
             <h3>Visit us to look your best</h3>
             <button className='button'>SHOP NOW</button>
           </div>
         </div>
-        <div className='home-half-contianer'>
-          <img className='back-img' src={require('../images/back-left.png')} alt=''></img>
+        <div className='home-logo home-half-container'>
+          <img className='back-img' src={require('../images/mda-logo.jpg')} alt=''></img>
         </div>
       </div>
     );
