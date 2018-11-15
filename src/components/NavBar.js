@@ -6,26 +6,28 @@ import {NavLink} from 'react-router-dom'
 const NavBar = (props) => {
 
   return (
-  <div className='nav-container'>
-    <div className='on-left'>
-        <h1>Muff Diver Apparel</h1>
-    </div>
-    <div className='on-right'>
-      
-      <NavLink to="/home" >
-        <h1>Home</h1>
-      </NavLink>
-
-      <NavLink to="/about">
-        <h1>About Us</h1>
-      </NavLink>
-
-      <NavLink to="/contact">
-        <h1>Contact Us</h1>
-      </NavLink>
-
-    </div>
-  </div>
+    <ul class="topnav">
+      <li>
+        <NavLink to='/' >
+          Muff Diver Apparel
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/home" >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/about">
+          About Us
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact">
+          Contact Us
+        </NavLink>
+      </li>
+    </ul>
   );
 }
 
