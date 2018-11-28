@@ -1,3 +1,10 @@
+.no-margin {
+  margin: 0px;
+}
+.text-center {
+  text-align: center;
+}
+
 .home-main-container {
   max-width: 100%;
 }
@@ -14,11 +21,69 @@
   text-align: center;
 }
 
+.navbar-promo {
+  padding: 8px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 16px;
+  font-family: sans-serif;
+  color: #000;
+  border-bottom: 1px solid #E2E2E2;
+  font-family: 'Josefin Slab', serif;
+}
+
+.navbar-wrapper,
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-wrapper-right {
+  margin-left: 0;
+  display: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-toggle {
+  align-self: flex-start;
+  display: initial;
+  position: absolute;
+  cursor: pointer;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+  .navbar-wrapper-right {
+    margin-left: auto;
+    display: flex;
+  } 
+  .navbar-wrapper,
+  .navbar {
+    flex-direction: row;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 0px;
+  }
+  
+  .nav-link a {
+    padding: 8px;
+  }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -33,67 +98,3 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
-
-/* Navbar css  */
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #4CAF50;}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 600px){
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
-}
-
-/* end of Navbar css  */
-
-.button {
-   border-top: 1px solid #000000;
-   background: #000000;
-   background: -webkit-gradient(linear, left top, left bottom, from(#bdbdbd), to(#000000));
-   background: -webkit-linear-gradient(top, #bdbdbd, #000000);
-   background: -moz-linear-gradient(top, #bdbdbd, #000000);
-   background: -ms-linear-gradient(top, #bdbdbd, #000000);
-   background: -o-linear-gradient(top, #bdbdbd, #000000);
-   padding: 14px 28px;
-   -webkit-border-radius: 30px;
-   -moz-border-radius: 30px;
-   border-radius: 30px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 17px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.button:hover {
-   border-top-color: #ffffff;
-   background: #ffffff;
-   color: #000000;
-   }
-.button:active {
-   border-top-color: #000000;
-   background: #000000;
-   }
